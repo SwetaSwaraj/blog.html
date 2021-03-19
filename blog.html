@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Merlin;
+  margin: 6;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: lightpink;
+  color: black;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: purple;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: lightpink;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: blue;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:lightblue;padding:5px">
+  <h4 style="text-align:center">"You gotta have style.It helps you get down the stairs."</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>FASHION</h1>
+  <p>Fashion is the <b> armor</b> to survive the reality of everyday life.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">File</a>
+  <a href="#">Search</a>
+  <a href="#">Help</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>MYSELF</h2>
+    <h5>SWETA SWARAJ</h5>
+    <div class="fakeimg" style="height:60%,width:60%;"><img src="a.jpg"></div>
+    <p>"Anyone can get dressed up and glamorous,but it is how people dress in their days off that are the most intriguing.".</p>
+    <h3>Some Glimpses</h3>
+    <p>"People will stater make it worth their while.".</p>
+    <div class="fakeimg" style="height:30%,width:30%;"><img src="b.jpg"></div><br>
+    <div class="fakeimg" style="height:30%:width:30%;"><img src="c.jpg"></div><br>
+    <div class="fakeimg" style="height:30%:width:30%;"><img src="d.jpg"></div></div>
+
+  <div class="main">
+    <h2>VOGUE</h2>
+    <h5>BE THE REAL YOU!</h5>
+    <div class="fakeimg" style="height:30%,width:30%;"><img src="f.jpg"></div>
+    <p>Quote</p>
+    <p>Fashion in the 20th and 21st century is rapid and somehow repeated through the influence of previous trends and impacts occured in the past.However there are some impacts which has immensely not only changed fashion but attitudes towards fashion.Fashion is more acceptable and essential necessity compared to few hundred years ago fashion wasn't a necessity but a privilege for some."Fashion is simply our lifestyle." .</p>
+    <br>
+    <h2>RAGE</h2>
+    <h5>"Clothes means nothing until someone lives in them!"</h5>
+    <div class="fakeimg" style="height:50%,width:50%;"><img src="e.jpg"></div>
+    <p>KNOWN</p>
+    <p>Whether you choose to follow the latest trends or whether we prefer to create our own,there is no denying that fashion can be a significant part of our lives.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Created by SWARAJ</h2>
+</div>
+
+</body>
+</html>
